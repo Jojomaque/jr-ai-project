@@ -1,4 +1,5 @@
 function displayPoem(response) {
+   console.log("poem generated");
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
@@ -26,6 +27,11 @@ let poemElement = document.querySelector("#poem");
 
 let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", generatePoem);
+
+
+
+
+
 
 
 
